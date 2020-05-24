@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+"title":"My blog about nothing",
+"author":"Art Vandeley",
+"url":"www.nothing.fi",
+"likes":"50"    
+}
