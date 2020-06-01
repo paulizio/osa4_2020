@@ -1,9 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxhcyIsImlkIjoiNWVjZTEzNzRiYWJlYjMyMmFkZjM5MTY4IiwiaWF0IjoxNTkwNTg4NTE1fQ.pqWMUhQwlmR1slsD-JxnwUoQ287u0ljl1LAw0iPY8Ww
 
 {
-"title":"My blog about nothing",
-"author":"Art Vandeley",
-"url":"www.nothing.fi",
-"likes":"50"    
+"title":"testblog22",
+"author":"Esimerkki22",
+"url":"www.test.fi22",
+"likes":"552"    
 }
