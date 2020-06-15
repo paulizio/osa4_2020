@@ -49,6 +49,24 @@ res.status(204).end()
     next(exception)
 
 }
+
 })
+blogsRouter.put('/:id',async(req,res,next)=>{
+  const body=req.body
+  console.log('body is',body)
+  const blog={
+      title:body.title,
+      author:body.author,
+      url:body.url,
+      likes:body.likes
+  }
+  try{
+    const updatedBlog= await Blog.findByIdAndUpdate(req.params.id,blog)
+    res.json(updatedBlog.toJSON())
+  }catch(exception){
+      next(exception)
+  }
+    
+    })
 
 module.exports=blogsRouter
